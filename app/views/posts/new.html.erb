@@ -1,0 +1,10 @@
+<% form_for(@post) do |f| %>
+<div class="field">
+  <%= f.label :'Post Text' %><br>
+  <%= f.text_area :posttext %>
+  <%= f.text-field :postauthor %>
+</div>
+<div>
+  <%= f.submit 'Create' %>
+</div>
+<% end %>

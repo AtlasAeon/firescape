@@ -1,0 +1,5 @@
+<% provide(:title, "Posts") %>
+<h1>Posts</h1>
+<% @allposts.each  do |post| %>
+<%= post.posttext %> <br>
+<% end %>
