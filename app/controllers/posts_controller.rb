@@ -7,6 +7,10 @@ class PostsController < ApplicationController
 
   end
 
+  def destroy
+
+  end
+
   def new
     @post = Post.new
   end
