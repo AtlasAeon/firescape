@@ -1,8 +1,9 @@
-<% form_for(@post) do |f| %>
-<div class="field">
+<h1>Submit a new post!</h1>
+<%= form_for(@post) do |f| %>
+<div>
   <%= f.label :'Post Text' %><br>
   <%= f.text_area :posttext %>
-  <%= f.text-field :postauthor %>
+  <%= f.text_field :postauthor %>
 </div>
 <div>
   <%= f.submit 'Create' %>

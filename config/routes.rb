@@ -2,7 +2,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'posts' => 'posts#show'
+resources :posts
+  # get 'posts' => 'posts#show'
+  # get 'posts/new' => 'posts#new'
+  # post 'posts' => 'posts#create'
 
   get 'help' => 'help#index'
 

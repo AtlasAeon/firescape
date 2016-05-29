@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
-  def show
+  def index
     @allposts = Post.all
+  end
+
+  def show
+
   end
 
   def new
@@ -13,10 +17,12 @@ class PostsController < ApplicationController
       redirect_to '/posts'
     else
       render 'new'
+    end
   end
 
   private
   def page_params
     params.require(:post).permit(:posttext, :postauthor)
   end
+
 end
